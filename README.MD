@@ -1,5 +1,12 @@
+===
+steps:
+
 [![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/lll9p/keep-alive)
 
+then:
+
+
+Add `d1` database (name=DB database_name=keeper_d1) and copy `database_id`(`UUID`) to `wrangler.jsonc`
 
 Add `API_CONFIGS` on worker's env:
 

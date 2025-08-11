@@ -12,7 +12,7 @@
     {
       "binding": "DB",
       "database_name": "keeper_d1",
-      "database_id": "<DATABASE_ID>"
+      "database_id": "1c588a52-5ac2-4479-801c-b8fa0c76054d"
     }
   ],
   "vars": {
