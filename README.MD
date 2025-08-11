@@ -1,7 +1,7 @@
 ===
 steps:
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/lll9p/keep-alive)
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/lll9p/keepalive)
 
 then:
 
@@ -33,3 +33,4 @@ Add `QUESTIONS` on worker's env:
 ```json
 ["xxxxx1", "xxxxxxx2", "xxxxxxx3", "xxxxxxx4"]
 ```
+
