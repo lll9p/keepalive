@@ -1,16 +1,35 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
   "name": "keepalive",
   "main": "_worker.js",
   "compatibility_date": "2025-08-09",
   "observability": {
     "enabled": true
   },
+  "triggers": {
+    "crons": ["*/5 * * * *"]
+  },
   "d1_databases": [
     {
       "binding": "DB",
       "database_name": "keeper_d1",
-      "database_id": "1c588a52-5ac2-4479-801c-b8fa0c76054d"
+      "database_id": "<DATABASE_ID>"
     }
-  ]
+  ],
+  "vars": {
+    "API_CONFIGS": [
+      {
+        "apiKey": "AIzaSyCNUGhuoAvvaSJ2ypsqzgtuCaLSusRZs5Y",
+        "apiName": "gemini-2.0-flash",
+        "name": "Render",
+        "url": "https://mygemini-balance.com/openai/v1/chat/completions"
+      },
+      {
+        "apiKey": "AIzaSyDIlXo2EBB798zw6gt8AGiAMpF4noLSv6I",
+        "apiName": "gemini-2.0-flash",
+        "name": "WHAT",
+        "url": "https://other-gemini-load/openai/v1/chat/completions"
+      }
+    ],
+    "QUESTIONS": ["xxxxx1", "xxxxxxx2", "xxxxxxx3", "xxxxxxx4"]
+  }
 }
